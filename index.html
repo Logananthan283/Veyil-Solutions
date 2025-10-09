@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veyil Solutions - Digital Solutions Agency</title>
+    <meta name="description" content="Custom Shopify , Branding, SEO & Fast Delivery - Veyil Solutions">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <!-- Logo -->
+                <div class="logo">
+                    <span class="logo-text"><img src="img/1.png" alt="logo" width="150px" height="150px"> <span class="logo-accent"></span></span>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="nav-menu desktop-menu">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#services" class="nav-link">Services</a>
+                    <a href="#portfolio" class="nav-link">Portfolio</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <button class="btn btn-primary" onclick="scrollToContact()">Get a Quote</button>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+                    <i data-lucide="menu" class="menu-icon"></i>
+                    <i data-lucide="x" class="close-icon" style="display: none;"></i>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div class="mobile-menu" id="mobileMenu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#portfolio" class="nav-link">Portfolio</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <button class="btn btn-primary btn-block" onclick="scrollToContact()">Get a Quote</button>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-bg"></div>
+        <div class="hero-decoration-1"></div>
+        <div class="hero-decoration-2"></div>
+        
+        <div class="container">
+            <div class="hero-grid">
+                <!-- Left Content -->
+                <div class="hero-content">
+                    <div class="badge">
+                        <span>🚀 Digital Solutions Agency</span>
+                    </div>
+                    
+                    <h1 class="hero-title">
+                        Build Your Brand. <span class="text-accent">Grow Your Business.</span>
+                    </h1>
+                    
+                    <p class="hero-subtitle">
+                        Custom Shopify • Branding • SEO • Fast Delivery
+                    </p>
+                    
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary btn-large" onclick="scrollToContact()">
+                            <span>GET A FREE QUOTE</span>
+                            <i data-lucide="arrow-right"></i>
+                        </button>
+                        <button class="btn btn-outline btn-large" onclick="scrollToSection('portfolio')">
+                            <span>VIEW WORK</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Right Content - Device Mockups -->
+                <div class="hero-mockups">
+                    <div class="mockup-container">
+                        <div class="laptop-mockup">
+                            <img src="https://images.unsplash.com/photo-1581225218177-9a18341ec628?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlY29tbWVyY2UlMjB3ZWJzaXRlJTIwbGFwdG9wJTIwbW9ja3VwfGVufDF8fHx8MTc1OTk5MjY3N3ww&ixlib=rb-4.1.0&q=80&w=1080" alt="E-commerce website">
+                        </div>
+                        <div class="phone-mockup">
+                            <img src="https://images.unsplash.com/photo-1758876201516-8a24429cbb3b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxvbmxpbmUlMjBzaG9wcGluZyUyMG1vYmlsZSUyMHBob25lfGVufDF8fHx8MTc1OTk5MjY3OHww&ixlib=rb-4.1.0&q=80&w=1080" alt="Mobile shopping">
+                        </div>
+                        <div class="mockup-glow"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="container">
+            <div class="about-grid">
+                <!-- Image -->
+                <div class="about-image">
+                    <div class="image-wrapper">
+                        <img src="img/2.png" alt="">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+                
+                <!-- Content -->
+                <div class="about-content">
+                    <div class="badge">
+                        <span>ABOUT US</span>
+                    </div>
+                    
+                    <h2>Who We Are</h2>
+                    
+                    <div class="about-text">
+                        <p>
+                            Veyil Solutions is a creative e-commerce agency based in India, dedicated to helping startups and small businesses launch and grow their digital presence.
+                        </p>
+                        <p>
+                            We combine technical expertise with creative design to deliver custom solutions that not only look stunning but drive real business results. From Shopify stores to complete branding packages, we're your partner in digital success.
+                        </p>
+                        <p>
+                            Our mission is simple: make professional e-commerce and digital solutions accessible to businesses of all sizes, delivered fast without compromising on quality.
+                        </p>
+                    </div>
+                    
+                    <!-- Stats -->
+                    <div class="stats-grid">
+                        <div class="stat">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label">Projects Delivered</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">30+</div>
+                            <div class="stat-label">Happy Clients</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">Satisfaction</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="section-header">
+                <div class="badge">
+                    <span>WHAT WE DO</span>
+                </div>
+                <h2>Our Services</h2>
+                <p>Comprehensive digital solutions to help your business thrive online</p>
+            </div>
+            
+            <!-- Services Grid -->
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <div class="service-icon gradient-blue">
+                        <i data-lucide="shopping-cart"></i>
+                    </div>
+                    <h3>Shopify Store Setup</h3>
+                    <p>Custom stores with payment integration, inventory management, and conversion-optimized design.</p>
+                </div>
+                
+                <!-- Service 2 
+                <div class="service-card">
+                    <div class="service-icon gradient-purple">
+                        <i data-lucide="globe"></i>
+                    </div>
+                    <h3>Wix Website Creation</h3>
+                    <p>Beautiful, mobile-ready websites that capture your brand and engage your audience.</p>
+                </div> -->
+                
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <div class="service-icon gradient-orange">
+                        <i data-lucide="palette"></i>
+                    </div>
+                    <h3>Branding & Graphics</h3>
+                    <p>Logos, social media posts, marketing creatives, and complete brand identity packages.</p>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="service-card">
+                    <div class="service-icon gradient-green">
+                        <i data-lucide="trending-up"></i>
+                    </div>
+                    <h3>SEO Optimization</h3>
+                    <p>Rank higher on search engines, attract more visitors, and convert them into customers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Why Choose Us Section -->
+    <section class="why-section">
+        <div class="why-bg"></div>
+        <div class="container">
+            <!-- Section Header -->
+            <div class="section-header">
+                <div class="badge">
+                    <span>WHY US</span>
+                </div>
+                <h2>Why Choose Us</h2>
+                <p>We deliver results that matter to your business</p>
+            </div>
+            
+            <!-- Features Grid -->
+            <div class="features-grid">
+                <!-- Feature 1 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="search"></i>
+                    </div>
+                    <h3>SEO Ready</h3>
+                    <p>All our websites are optimized for search engines from day one</p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="smartphone"></i>
+                    </div>
+                    <h3>Mobile-First</h3>
+                    <p>Responsive designs that look perfect on every device</p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="zap"></i>
+                    </div>
+                    <h3>Fast Delivery</h3>
+                    <p>Quick turnaround times without compromising on quality</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="section-header">
+                <div class="badge">
+                    <span>OUR WORK</span>
+                </div>
+                <h2>Recent Work</h2>
+                <p>Check out some of our latest projects and success stories</p>
+            </div>
+            
+            <!-- Portfolio Grid -->
+            <div class="portfolio-grid">
+                <!-- Project 1 -->
+                <div class="portfolio-item">
+    <div class="portfolio-image">
+        <img src="img/3.jpg" alt="Fashion E-commerce Store">
+    </div>
+    <div class="portfolio-overlay">
+        <div class="portfolio-content">
+            <div class="badge small">
+                <span>Shopify Development</span>
+            </div>
+            <h3>Fashion E-commerce Store</h3>
+            <a href="https://leaderclothings.in" target="_blank" class="btn btn-secondary">
+                View Project <i data-lucide="external-link"></i>
+            </a>
+        </div>
+    </div>
+    <!-- Mobile Static Overlay -->
+    <div class="portfolio-mobile-overlay">
+        <div class="badge small">
+            <span>Shopify Development</span>
+        </div>
+        <h3>Fashion E-commerce Store</h3>
+    </div>
+</div>
+
+                <!-- Project 2
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1649000808933-1f4aac7cad9a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB3ZWIlMjBkZXNpZ24lMjBwb3J0Zm9saW98ZW58MXx8fHwxNzU5OTkyNjc4fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Creative Agency Website">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-content">
+                            <div class="badge small">
+                                <span>Wix Design</span>
+                            </div>
+                            <h3>Creative Agency Website</h3>
+                            <button class="btn btn-secondary">
+                                <span>View Project</span>
+                                <i data-lucide="external-link"></i>
+                            </button>
+                        </div>
+                    </div>  -->
+                    <!-- Mobile Static Overlay
+                    <div class="portfolio-mobile-overlay">
+                        <div class="badge small">
+                            <span>Wix Design</span>
+                        </div>
+                        <h3>Creative Agency Website</h3>
+                    </div>
+                </div>  -->
+                
+                <!-- Project 3
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1630283017751-76e1fbb14d91?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB3b3Jrc3BhY2UlMjBkZXNrfGVufDF8fHx8MTc1OTkyNjk0OHww&ixlib=rb-4.1.0&q=80&w=1080" alt="Tech Startup Branding">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-content">
+                            <div class="badge small">
+                                <span>Brand Identity</span>
+                            </div>
+                            <h3>Tech Startup Branding</h3>
+                            <button class="btn btn-secondary">
+                                <span>View Project</span>
+                                <i data-lucide="external-link"></i>
+                            </button>
+                        </div>
+                    </div>  -->
+                    <!-- Mobile Static Overlay
+                    <div class="portfolio-mobile-overlay">
+                        <div class="badge small">
+                            <span>Brand Identity</span>
+                        </div>
+                        <h3>Tech Startup Branding</h3>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="contact-decoration-1"></div>
+        <div class="contact-decoration-2"></div>
+        
+        <div class="container">
+            <!-- Section Header -->
+            <div class="section-header">
+                <div class="badge">
+                    <span>GET IN TOUCH</span>
+                </div>
+                <h2>Let's Build Something Amazing</h2>
+                <p>Ready to go online? Contact us today for your free quote.</p>
+            </div>
+            
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+  <form id="contactForm" class="contact-form" action="https://formspree.io/f/xanpdzgr" method="POST">
+    
+    <div class="form-group">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your Full Name" required>
+    </div>
+    
+    <div class="form-group">
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
+    </div>
+    
+    <div class="form-group">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Tell us about your project..." required></textarea>
+    </div>
+    
+    <button type="submit" class="btn btn-primary btn-block">
+      <span>SUBMIT</span>
+      <i data-lucide="send" aria-hidden="true"></i>
+    </button>
+    
+  </form>
+</div>
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <!-- Email -->
+                    <div class="contact-card">
+                        <div class="contact-icon gradient-yellow">
+                            <i data-lucide="mail"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email Us</h3>
+                            <p>Get in touch via email</p>
+                            <a href="mailto:logananthan283@gmail.com?subject=Hello&body=I%20would%20like%20to%20connect" target="_blank">Veyil Solutions</a>
+
+                        </div>
+                    </div>
+                    
+                    <!-- WhatsApp -->
+                    <div class="contact-card">
+                        <div class="contact-icon gradient-green-solid">
+                            <i data-lucide="message-circle"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>WhatsApp</h3>
+                            <p>Chat with us directly</p>
+                            <a href="https://wa.me/6374305335" target="_blank" rel="noopener noreferrer">Veyil Solutions</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Info Card -->
+                    <div class="contact-card info-card">
+                        <h3>Quick Response</h3>
+                        <p>We typically respond within 24 hours. For urgent inquiries, WhatsApp is the fastest way to reach us.</p>
+                        <div class="availability">
+                            <div class="pulse-dot"></div>
+                            <span>Available Mon-Sat, 9AM-6PM IST</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <!-- Main Footer Content -->
+            <div class="footer-grid">
+                <!-- Brand -->
+                <div class="footer-col">
+                    <div class="footer-brand">
+                        Veyil <span class="logo-accent">Solutions</span>
+                    </div>
+                    <p>Building digital excellence for businesses that want to grow online.</p>
+                </div>
+                
+                <!-- Quick Links -->
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <div class="footer-links">
+                        <a href="#home">Home</a>
+                        <a href="#services">Services</a>
+                        <a href="#portfolio">Portfolio</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                </div>
+                
+                <!-- Legal -->
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <div class="footer-links">
+                        <a href="privacy_policy.html">Privacy Policy</a>
+                        <a href="terms_and_conditions.html">Terms of Service</a>
+                        <a href="cookies_policy.html">Cookie Policy</a>
+                    </div>
+                </div>
+                
+                <!-- Social -->
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/veyil_solutions" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <i data-lucide="instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=61581734370254" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                            <i data-lucide="Facebook"></i>
+                        </a>
+                        <a href="mailto:hello@logananthan283@gmail.com" aria-label="Email">
+                            <i data-lucide="mail"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Bottom Bar -->
+            <div class="footer-bottom">
+                <p>© 2025 Veyil Solutions. All rights reserved.</p>
+                <p>Made with ❤️ in India</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Toast Notification -->
+    <div id="toast" class="toast"></div>
+    
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+    
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
